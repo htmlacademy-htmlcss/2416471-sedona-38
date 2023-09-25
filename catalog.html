@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Седона</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="main-header-logo" href="index.html">
+        <img src="#" alt="Логотип сайта Седона">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-links">
+          <li class="navigation-links-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-links-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-links-item">
+            <a class="navigation-link" href="/catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-icons">
+          <li class="navigation-icons-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-icons-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="navigtaion-link-amount">
+                12
+              </span>
+            </a>
+          </li>
+          <li class="navigation-icons-item">
+            <a class=" want-here" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <img src="#" alt="Иконка главной страницы"></a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+
+      <section class="choice-conditions">
+        <form action="#" method="get">
+          <fieldset class="infrastructure">
+            <legend class="infrastructure-title">Инфраструктура</legend>
+            <label for="infrastructure-input"><input type="checkbox" name="pool" checked>Бассейн</label>
+            <label for="infrastructure-input"><input type="checkbox" name="parking" checked>Парковка</label>
+            <label for="infrastructure-input"><input type="checkbox" name="wi_fi">Wi-Fi</label>
+          </fieldset>
+
+          <fieldset class="type-house">
+            <legend class="type-house-title">Тип жилья</legend>
+            <label for="type-house-input"><input type="checkbox" name="hotel" checked>Гостиница</label>
+            <label for="type-house-input"><input type="checkbox" name="motel">Мотель</label>
+            <label for="type-house-input"><input type="checkbox" name="appart">Аппартаменты</label>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="setting-price">
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Стоимость, <span>₽</span></legend>
+            <label>от<input type="text" value="0"></label>
+            <label>до<input type="text" value="9000"></label>
+          </fieldset>
+          <div class="slidecontainer">
+            <input type="range" min="0" max="9000" value="0" class="slider" id="myRange">
+          </div>
+          <button class="button-accept" type="submit">Применить</button>
+          <button class="button-reset" type="submit">Сбросить</button>
+        </form>
+      </section>
+      <section class="sorting-menu">
+      <p>Найдено гостиниц: <span>38</span></p>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+
+          <a href="#" class="button button-dark">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать карточку</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+      </section>
+
+
+
+
+
+
+
+
+    </main>
+
+
+  </body>
+
+</html>
