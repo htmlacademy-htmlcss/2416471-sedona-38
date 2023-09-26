@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <div class="wrapper">
     <header class="page-header">
       <a class="main-header-logo" href="index.html">
         <img src="#" alt="Логотип сайта Седона">
@@ -117,8 +118,8 @@
               </div>
             </fieldset>
 
-            <input class="button-accept" type="submit" />
-            <input class="button-reset" type="reset" />
+            <input class="button-accept" type="submit" value="Применить">
+            <input class="button-reset" type="reset" value="Сбросить">
           </form>
         </section>
       </section>
@@ -253,9 +254,59 @@
             </li>
           </ul>
         </section>
-
       </section>
+
+      <section class="newsletter">
+        <h4 class="newsletter-title">Подпишитесь на рассылку</h4>
+        <p class="newsletter-subtitle">Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form class="newsletter-form" action="#" method="post">
+            <input placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
+            <button class="button newsletter-button" type="submit">
+                <span>Отправить</span>
+            </button>
+        </form>
+    </section>
     </main>
+    </div>
+
+    <footer class="footer-page">
+
+      <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+              <li class="footer-social-item">
+                  <a href="https://vk.com/htmlacademy" class="button">
+                      <span class="visually-hidden">Вконтакте</span>
+                  </a>
+              </li>
+              <li class="footer-social-item">
+                  <a href="https://t.me/htmlacademy" class="button">
+                      <span class="visually-hidden">Телеграмм</span>
+                  </a>
+              </li>
+              <li class="footer-social-item">
+                  <a href="https://www.youtube.com/user/htmlacademyru" class="button">
+                      <span class="visually-hidden">YouTube</span>
+                  </a>
+              </li>
+          </ul>
+      </section>
+
+      <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <section class="footer-logo">
+          <h2 class="visually-hidden">Логотип HTML Academy</h2>
+          <a class="footer-logo-academy" href="https://htmlacademy.ru/">
+              <img src="#" alt="Логотип HTML Academy">
+          </a>
+      </section>
+
+  </footer>
 
   </body>
 
