@@ -10,10 +10,11 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <a class="main-header-logo" href="index.html">
-          <img src="#" alt="Логотип сайта Седона">
-        </a>
+
         <nav class="navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="#" alt="Логотип сайта Седона">
+          </a>
           <ul class="navigation-links">
             <li class="navigation-links-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -22,17 +23,17 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-links-item">
-              <a class="navigation-link" href="/catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
-          <ul class="navigation-icons">
-            <li class="navigation-icons-item">
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-icons-item">
+            <li class="navigation-user-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="navigtaion-link-amount">
@@ -40,7 +41,7 @@
                 </span>
               </a>
             </li>
-            <li class="navigation-icons-item">
+            <li class="navigation-user-item">
               <a class=" want-here" href="#">Хочу сюда</a>
             </li>
           </ul>
@@ -56,7 +57,6 @@
                 <a class="breadcrumbs-link" href="index.html">
                   <img src="#" alt="Иконка главной страницы">
                 </a>
-                <span>></span>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
@@ -87,17 +87,17 @@
                 <legend class="infrastructure-title">Тип жилья</legend>
                 <div class="infrastructure-item">
                   <label for="hotel">Гостиница</label>
-                  <input class="circle-input" type="radio" id="hotel" name="hotel" checked />
+                  <input class="circle-input" type="radio" id="hotel" name="circle-housetype" checked />
                 </div>
 
                 <div class="infrastructure-item">
                   <label for="motel">Мотель</label>
-                  <input class="circle-input" type="radio" id="motel" name="motel" />
+                  <input class="circle-input" type="radio" id="motel" name="circle-housetype" />
                 </div>
 
                 <div class="infrastructure-item">
                   <label for="appart">Аппартаменты</label>
-                  <input class="circle-input" type="radio" id="appart" name="appart" />
+                  <input class="circle-input" type="radio" id="appart" name="circle-housetype" />
                 </div>
               </fieldset>
 
@@ -138,26 +138,28 @@
 
             <div class="filters-block">
               <i class="button button-dark">
+                <!-- Сортировать в виде таблицы -->
                 <svg></svg>
               </i>
               <i class="button">
+                <!-- Сортировать в виде слайда -->
                 <svg></svg>
               </i>
               <i class="button">
+                <!-- Сортировать в виде списка -->
                 <svg></svg>
               </i>
             </div>
           </section>
 
           <section class="product-place">
-
-            <div class="product">
-              <div class="product-img">
-                <a href="#">
-                  <img src="#" alt="Изображение продукта">
-                </a>
-              </div>
-              <div class="product-info">
+            <ul class="product-list">
+              <li class="product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="#" alt="Изображение продукта">
+                  </a>
+                </div>
                 <h3>Amara Resort & Spa</h3>
                 <div class="product-specification">
                   <span class="product-type">Гостиница</span>
@@ -171,16 +173,14 @@
                   <div class="product-rating-stars"></div>
                   <div class="product-rating-amount">Рейтинг: 8,5</div>
                 </div>
-              </div>
-            </div>
+              </li>
 
-            <div class="product">
-              <div class="product-img">
-                <a href="#">
-                  <img src="#" alt="Изображение продукта">
-                </a>
-              </div>
-              <div class="product-info">
+              <li class="product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="#" alt="Изображение продукта">
+                  </a>
+                </div>
                 <h3>Villas at Poco Diablo</h3>
                 <div class="product-specification">
                   <span class="product-type">Гостиница</span>
@@ -194,16 +194,14 @@
                   <div class="product-rating-stars"></div>
                   <div class="product-rating-amount">Рейтинг: 9,2</div>
                 </div>
-              </div>
-            </div>
+              </li>
 
-            <div class="product">
-              <div class="product-img">
-                <a href="#">
-                  <img src="#" alt="Изображение продукта">
-                </a>
-              </div>
-              <div class="product-info">
+              <li class="product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="#" alt="Изображение продукта">
+                  </a>
+                </div>
                 <h3>Desert Quali Inn</h3>
                 <div class="product-specification">
                   <span class="product-type">Гостиница</span>
@@ -217,16 +215,14 @@
                   <div class="product-rating-stars"></div>
                   <div class="product-rating-amount">Рейтинг: 6,9</div>
                 </div>
-              </div>
-            </div>
+              </li>
 
-            <div class="product">
-              <div class="product-img">
-                <a href="#">
-                  <img src="#" alt="Изображение продукта">
-                </a>
-              </div>
-              <div class="product-info">
+              <li class="product">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="#" alt="Изображение продукта">
+                  </a>
+                </div>
                 <h3>GreenTree Inn</h3>
                 <div class="product-specification">
                   <span class="product-type">Гостиница</span>
@@ -240,8 +236,8 @@
                   <div class="product-rating-stars"></div>
                   <div class="product-rating-amount">Рейтинг: 5,0</div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </section>
 
           <section class="pagination-line">
@@ -304,17 +300,12 @@
           </ul>
         </section>
 
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </section>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12
+        </a>
 
-        <section class="footer-logo">
-          <h2 class="visually-hidden">Логотип HTML Academy</h2>
-          <a class="footer-logo-academy" href="https://htmlacademy.ru/">
-            <img src="#" alt="Логотип HTML Academy">
-          </a>
-        </section>
+        <a class="footer-logo-academy" href="https://htmlacademy.ru/">
+          <img src="#" alt="Логотип HTML Academy">
+        </a>
 
       </footer>
     </div>
