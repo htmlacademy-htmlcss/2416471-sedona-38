@@ -16,6 +16,7 @@
 
 html {
   font-family: "PT Sans";
+
 }
 
 *,
@@ -25,10 +26,16 @@ html {
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFFFFF;
 }
 
 ul {
@@ -41,6 +48,12 @@ ul {
 
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .navigation-links {
   background-color: #FFFFFF;
   color: #000000;
@@ -49,6 +62,14 @@ ul {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  width: 464px;
+}
+
+.navigation-user {
+  max-width: 308px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -70,10 +91,17 @@ ul {
 
 }
 
+
 .welcome-section {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  padding: 51px 0 82px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.advantages {
+  padding: 69px;
 }
 
 .welcome-text {
@@ -83,6 +111,7 @@ ul {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .pre-advantages-text {
@@ -91,10 +120,12 @@ ul {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 69px;
 }
 
 .advantages-item {
   display: flex;
+
 
 }
 
