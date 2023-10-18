@@ -76,6 +76,11 @@ ul {
   padding: 0 70px 0 70px;
 }
 
+.main-header-logo {
+  font-size: 0;
+  margin-bottom: -5px;
+}
+
 .navigation-links {
   display: flex;
   background-color: #FFFFFF;
@@ -408,7 +413,6 @@ ul {
 
 .main-inner-filter-section {
   background-image: url("../images/filter-background.jpg");
-  background-size: 100% 100%;
   padding: 35px 70px 70px 70px;
 
 }
