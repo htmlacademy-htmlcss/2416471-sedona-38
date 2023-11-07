@@ -58,8 +58,8 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <img src="images/back_to_mainpage-icon.svg" alt="Вернуться на главную страницу" width="12"
-                    height="12">
+                  <img src="images/back_to_mainpage-icon.svg" alt="Вернуться на главную страницу" width="13"
+                    height="15">
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -69,39 +69,43 @@
           </header>
           <section class="choice-conditions">
             <form action="#" method="get">
-              <fieldset class="infrastructure">
+              <fieldset class="infrastructure main-infrastructure">
                 <legend class="infrastructure-title">Инфраструктура</legend>
                 <div class="infrastructure-item">
-                  <label for="pool">Бассейн</label>
-                  <input class="square-input" type="checkbox" id="pool" name="pool" checked />
+                  <input class="visually-hidden square-input" type="checkbox" id="pool" name="pool" />
+                  <span class="control-mark"></span>
+                  <label class="control-label" for="pool">Бассейн</label>
                 </div>
 
                 <div class="infrastructure-item">
-                  <label for="parking">Парковка</label>
-                  <input class="square-input" type="checkbox" id="parking" name="parking" checked />
+                  <input class="visually-hidden square-input" type="checkbox" id="parking" name="parking" />
+                  <span class="control-mark"></span>
+                  <label class="control-label" for="parking">Парковка</label>
                 </div>
 
                 <div class="infrastructure-item">
-                  <label for="wifi">Wi-Fi</label>
-                  <input class="square-input" type="checkbox" id="wifi" name="wifi" />
+                  <input class="visually-hidden square-input" type="checkbox" id="wifi" name="wifi" />
+                  <span class="control-mark"></span>
+                  <label class="control-label" for="wifi">Wi-Fi</label>
                 </div>
               </fieldset>
 
               <fieldset class="infrastructure infrastructure-typehouse">
                 <legend class="infrastructure-title">Тип жилья</legend>
                 <div class="infrastructure-item">
-                  <label for="hotel">Гостиница</label>
-                  <input class="circle-input" type="radio" id="hotel" name="circle-housetype" checked />
+                  <input class="visually-hidden circle-input" type="radio" id="hotel" name="circle-housetype" />
+                  <span class="control-mark-radio"></span>
+                  <label class="control-label-radio" for="hotel">Гостиница</label>
                 </div>
 
                 <div class="infrastructure-item">
-                  <label for="motel">Мотель</label>
                   <input class="circle-input" type="radio" id="motel" name="circle-housetype" />
+                  <label for="motel">Мотель</label>
                 </div>
 
                 <div class="infrastructure-item">
-                  <label for="appart">Аппартаменты</label>
                   <input class="circle-input" type="radio" id="appart" name="circle-housetype" />
+                  <label for="appart">Аппартаменты</label>
                 </div>
               </fieldset>
 
@@ -109,17 +113,25 @@
                 <legend>Стоимость, ₽</legend>
                 <div class="price-range">
                   <div class="price-range-item">
-                    <label for="from">от</label>
-                    <input type="text" value="0" id="from" name="from">
+                    <input type="number" value="0" id="from" name="from" class="range-input range-input-from">
+                    <label for="from" class="price-indication">от</label>
                   </div>
                   <div class="price-range-item">
-                    <label for="to">до</label>
-                    <input type="text" value="9000" id="to" name="to">
+                    <input type="number" value="9000" id="to" name="to" class="range-input range-input-to">
+                    <label for="to" class="price-indication">до</label>
                   </div>
 
                 </div>
                 <div class="slidecontainer">
-                  <input type="range" min="0" max="9000" value="0" class="slider" id="myRange">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 10px; width: 61px;">
+                      <button type="button" class="range-toggle toggle-min"></button>
+                      <button type="button" class="range-toggle toggle-max"></button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs"></div>
+                  <!-- <input type="range" min="0" max="9000" value="0" class="slider" id="myRange"> -->
                 </div>
               </fieldset>
 

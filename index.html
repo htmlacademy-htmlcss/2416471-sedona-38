@@ -115,20 +115,21 @@
           </div>
           <ul class="services-list">
             <li class="services-item services-item-dark-grey">
-              <img src="images/advantage-icon-house.svg" alt="Жилье" width="75" height="72">
+              <img src="images/advantage-icon-house.svg" alt="Жилье" width="75" height="72" class="services-icon">
               <h3 class="services-title">Жилье</h3>
               <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё
                 как в кино!</p>
             </li>
             <li class="services-item services-item services-item-light-grey">
-              <img src="images/advantage-icon-food.svg" alt="Еда" width="75" height="72">
+              <img src="images/advantage-icon-food.svg" alt="Еда" width="75" height="72" class="services-icon">
               <h3 class="services-title">Еда</h3>
               <p class="services-description">Всегда заказывайте топовый фирменный бургер,
                 вы не
                 разочаруетесь!</p>
             </li>
             <li class="services-item services-item-dark-grey">
-              <img src="images/advantage-icon-souvenirs.svg" alt="Сувениры" width="75" height="72">
+              <img src="images/advantage-icon-souvenirs.svg" alt="Сувениры" width="75" height="72"
+                class="services-icon">
               <h3 class="services-title">Сувениры</h3>
               <p class="services-description">Не только китайского, но и настоящего
                 местного производства!
@@ -228,11 +229,77 @@
               d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" />
           </svg>
         </a>
-
-
       </footer>
+
     </div>
 
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-finder">
+
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form class="modal-finder-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label for="arrival-date" class="modal-form-label">Дата заезда:</label>
+              <div class="date-menu">
+                <input class="modal-arrival-date" type="text" for="arrival-date" id="arrival-date" name="arrival-date"
+                  value="27 апреля 2020" placeholder="Укажите дату">
+                <p class="date-warning date-incorrect">Мы не можем отправить вас в прошлое.</p>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="departure-date" class="modal-form-label">Дата выезда:</label>
+              <div>
+                <input class="modal-departure-date" type="text" for="departure-date" id="departure-date"
+                  name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+                <p class="date-warning date-correct">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </div>
+            <div class="field-group">
+              <div class="adults-group">
+                <label for="age" class="modal-form-label modal-form-label-adults">Взрослые:</label>
+                <div class="adult-control-section">
+                  <button class="button-adult-control button-lower" type="button"></button>
+                  <input type="number" value="2" id="age" name="age" class="amount-input amount-input-adults">
+                  <button class="button-adult-control button-raise" type="button"></button>
+                </div>
+              </div>
+
+              <div class="child-group">
+                <span class="modal-form-label-child">
+                  <label for="age" class="modal-form-label modal-form-label-child">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="adult-control-section">
+                  <button class="button-adult-control button-lower" type="button"></button>
+                  <input type="number" value="2" id="age" name="age" class="amount-input amount-input-adults">
+                  <button class="button-adult-control button-raise" type="button"></button>
+                </div>
+              </div>
+            </div>
+
+
+          </form>
+        </section>
+
+
+      </div>
+    </div>
 
 
   </body>
