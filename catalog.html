@@ -71,42 +71,44 @@
             <form action="#" method="get">
               <fieldset class="infrastructure main-infrastructure">
                 <legend class="infrastructure-title">Инфраструктура</legend>
-                <div class="infrastructure-item">
-                  <input class="visually-hidden square-input" type="checkbox" id="pool" name="pool" />
+                <label class="infrastructure-item">
+                  <input class="visually-hidden square-input" type="checkbox" id="pool" name="pool" checked />
                   <span class="control-mark"></span>
-                  <label class="control-label" for="pool">Бассейн</label>
-                </div>
+                  <span class="control-label" for="pool">Бассейн</span>
+                </label>
 
-                <div class="infrastructure-item">
+                <label class="infrastructure-item">
                   <input class="visually-hidden square-input" type="checkbox" id="parking" name="parking" />
                   <span class="control-mark"></span>
-                  <label class="control-label" for="parking">Парковка</label>
-                </div>
+                  <span class="control-label" for="parking">Парковка</span>
+                </label>
 
-                <div class="infrastructure-item">
+                <label class="infrastructure-item">
                   <input class="visually-hidden square-input" type="checkbox" id="wifi" name="wifi" />
                   <span class="control-mark"></span>
-                  <label class="control-label" for="wifi">Wi-Fi</label>
-                </div>
+                  <span class="control-label" for="wifi">Wi-Fi</span>
+                </label>
               </fieldset>
 
               <fieldset class="infrastructure infrastructure-typehouse">
                 <legend class="infrastructure-title">Тип жилья</legend>
-                <div class="infrastructure-item">
+                <label class="infrastructure-item">
                   <input class="visually-hidden circle-input" type="radio" id="hotel" name="circle-housetype" />
                   <span class="control-mark-radio"></span>
-                  <label class="control-label-radio" for="hotel">Гостиница</label>
-                </div>
+                  <span class="control-label-radio" for="hotel">Гостиница</span>
+                </label>
 
-                <div class="infrastructure-item">
-                  <input class="circle-input" type="radio" id="motel" name="circle-housetype" />
-                  <label for="motel">Мотель</label>
-                </div>
+                <label class="infrastructure-item">
+                  <input class="visually-hidden circle-input" type="radio" id="motel" name="circle-housetype" />
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label-radio" for="motel">Мотель</span>
+                </label>
 
-                <div class="infrastructure-item">
-                  <input class="circle-input" type="radio" id="appart" name="circle-housetype" />
-                  <label for="appart">Аппартаменты</label>
-                </div>
+                <label class="infrastructure-item">
+                  <input class="visually-hidden circle-input" type="radio" id="appart" name="circle-housetype" />
+                  <span class="control-mark-radio"></span>
+                  <span class="control-label-radio" for="appart">Аппартаменты</span>
+                </label>
               </fieldset>
 
               <fieldset class="price">
@@ -129,9 +131,7 @@
                       <button type="button" class="range-toggle toggle-max"></button>
                     </div>
                   </div>
-
                   <div class="range-wrapper-inputs"></div>
-                  <!-- <input type="range" min="0" max="9000" value="0" class="slider" id="myRange"> -->
                 </div>
               </fieldset>
 
@@ -147,11 +147,14 @@
           <section class="sorting-menu">
             <p class="total-found">Найдено гостиниц: 38</p>
             <div class="filter-menu">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешевые</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="popular">Сначала популярные</option>
-              </select>
+
+              <div class="select sorting-type">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="cheap">Сначала дешевые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                  <option value="popular">Сначала популярные</option>
+                </select>
+              </div>
 
               <div class="filters-block">
                 <button class="button-sort" aria-label="Сортировать в виде таблицы" type="button">
@@ -260,7 +263,7 @@
           <section class="pagination-line">
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link">1</a>
+                <a class="pagination-link pagination-current">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
