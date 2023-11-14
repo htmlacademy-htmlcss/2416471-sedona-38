@@ -78,7 +78,8 @@
 
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-item-town" src="images/advantage-photo-sedona.jpg" alt="Фото городка Седона">
+              <img class="advantages-item-town" src="images/advantage-photo-sedona.jpg" alt="Фото городка Седона"
+                width="800" height="385">
             </li>
 
             <li class="advantages-item">
@@ -104,7 +105,8 @@
             </li>
 
             <li class="advantages-item">
-              <img class="advantages-item-canyon" src="images/advantage-photo-canyon.jpg" alt="Фото моста дьявола">
+              <img class="advantages-item-canyon" src="images/advantage-photo-canyon.jpg" alt="Фото моста дьявола"
+                width="800" height="385">
               <div class="advantages-item-info advantages-item-info-blue">
                 <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
 
@@ -147,7 +149,7 @@
           <p class="search-hotels-title">Заинтересовались?</p>
           <p class="search-hotels-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
-          <button href="#" class="button-hotel-finder">Поиск гостиницы в Седоне
+          <button class="button-hotel-finder">Поиск гостиницы в Седоне
           </button>
         </section>
 
@@ -248,7 +250,7 @@
             <div class="field-group-date">
               <label for="arrival-date" class="modal-form-label">Дата заезда:</label>
               <div class="date-icon-position">
-                <input class="modal-arrival-date" type="text" for="arrival-date" id="arrival-date" name="arrival-date"
+                <input class="modal-arrival-date" type="text" id="arrival-date" name="arrival-date"
                   value="27 апреля 2020" placeholder="Укажите дату">
                 <svg class="date-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -295,8 +297,8 @@
             <div class="field-group-date">
               <label for="departure-date" class="modal-form-label">Дата выезда:</label>
               <div class="date-icon-position">
-                <input class="modal-departure-date" type="text" for="departure-date" id="departure-date"
-                  name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+                <input class="modal-departure-date" type="text" id="departure-date" name="departure-date"
+                  value="1 сентября 2023" placeholder="Укажите дату">
                 <svg class="date-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.3">
@@ -345,13 +347,15 @@
                 <div class="adult-control-section">
                   <button class="button-adult-control button-lower" type="button">
                     <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
-                      <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" />
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
+                    </svg>
                     </svg>
                   </button>
                   <input type="number" value="2" id="age" name="age" class="amount-input amount-input-adults">
                   <button class="button-adult-control button-raise" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                      <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -369,26 +373,25 @@
                       </svg>
                     </button>
                     <span class="tooltip-text tooltip-close">Укажите количество детей, которые будут с вами, возраст
-                      которых от 6 до
-                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
                 <div class="adult-control-section">
                   <button class="button-adult-control button-lower" type="button">
                     <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
-                      <path id="Vector" d="M0 0L0 2L14 2V0L0 0Z" />
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
                   </button>
                   <input type="number" value="2" id="age" name="age" class="amount-input amount-input-adults">
                   <button class="button-adult-control button-raise" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                      <path id="Vector" d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                     </svg>
                   </button>
                 </div>
               </div>
             </div>
-            <button class="modal-button-find" href="#" type="submit">Найти</button>
+            <button class="modal-button-find" type="submit">Найти</button>
           </form>
         </section>
 
