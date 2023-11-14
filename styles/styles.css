@@ -166,6 +166,19 @@ ul {
   top: -9px;
 }
 
+.navigation-actions {
+  fill: #000000;
+}
+
+.navigation-actions:hover {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-actions:active {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+
 .navigation-user-item:first-child {
   margin: 0 25px 0 0;
   padding: 4px 0 0 0;
