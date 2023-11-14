@@ -707,6 +707,7 @@ ul {
 .infrastructure {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 .control-mark {
@@ -808,22 +809,10 @@ ul {
   margin: 0 0 16px 0;
 }
 
-fieldset {
-  border: 0;
-}
-
-legend {
-  color: #FFFFFF;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
-
-}
-
 .price {
   margin: 0 70px 0 0;
   padding: 0;
+  border: 0;
 }
 
 .price legend {
