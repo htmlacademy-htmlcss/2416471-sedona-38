@@ -16,7 +16,7 @@
 
         <nav class="navigation">
           <a class="main-header-logo" href="index.html">
-            <img src="images/main-logo-sedona.svg" alt="Логотип сайта Седона" width="140" height="70">
+            <img src="images/main-logo-sedona.svg" alt="Логотип сайта Седона." width="140" height="70">
           </a>
           <ul class="navigation-links">
             <li class="navigation-links-item">
@@ -49,7 +49,7 @@
                     d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z" />
                 </svg>
                 <span class="visually-hidden">Избранное</span>
-                <span class="navigtaion-link-amount">12</span>
+                <span class="navigation-link-amount">12</span>
               </a>
             </li>
             <li class="navigation-user-item">
@@ -84,21 +84,21 @@
             <form action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="infrastructure main-infrastructure">
                 <legend class="infrastructure-title">Инфраструктура:</legend>
-                <label class="infrastructure-item">
+                <label class="infrastructure-item" for="pool">
                   <input class="visually-hidden square-input" type="checkbox" id="pool" name="pool" checked
                     tabindex="-1" />
                   <span class="control-mark" tabindex="0"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
 
-                <label class="infrastructure-item">
+                <label class="infrastructure-item" for="parking">
                   <input class="visually-hidden square-input" type="checkbox" id="parking" name="parking" checked
                     tabindex="-1" />
                   <span class="control-mark" tabindex="0"></span>
                   <span class="control-label">Парковка</span>
                 </label>
 
-                <label class="infrastructure-item">
+                <label class="infrastructure-item" for="wifi">
                   <input class="visually-hidden square-input" type="checkbox" id="wifi" name="wifi" tabindex="-1" />
                   <span class="control-mark" tabindex="0"></span>
                   <span class="control-label">Wi-Fi</span>
@@ -107,21 +107,21 @@
 
               <fieldset class="infrastructure infrastructure-typehouse">
                 <legend class="infrastructure-title">Тип жилья:</legend>
-                <label class="infrastructure-item">
+                <label class="infrastructure-item" for="hotel">
                   <input class="visually-hidden circle-input" type="radio" id="hotel" name="circle-housetype" checked
                     tabindex="-1" />
                   <span class="control-mark-radio" tabindex="0"></span>
                   <span class="control-label-radio">Гостиница</span>
                 </label>
 
-                <label class="infrastructure-item">
+                <label class="infrastructure-item" for="motel">
                   <input class="visually-hidden circle-input" type="radio" id="motel" name="circle-housetype"
                     tabindex="-1" />
                   <span class="control-mark-radio" tabindex="0"></span>
                   <span class="control-label-radio">Мотель</span>
                 </label>
 
-                <label class="infrastructure-item">
+                <label class="infrastructure-item" for="appart">
                   <input class="visually-hidden circle-input" type="radio" id="appart" name="circle-housetype"
                     tabindex="-1" />
                   <span class="control-mark-radio" tabindex="0"></span>
@@ -133,11 +133,13 @@
                 <legend class="infrastructure-title">Стоимость, ₽:</legend>
                 <div class="price-range">
                   <div class="price-range-item">
-                    <input type="number" value="0" id="from" name="from" class="range-input range-input-from" min="0">
+                    <input type="number" value="0" id="from" name="from" class="range-input range-input-from" min="0"
+                      max="999999">
                     <label for="from" class="price-indication">от</label>
                   </div>
                   <div class="price-range-item">
-                    <input type="number" value="9000" id="to" name="to" class="range-input range-input-to" min="0">
+                    <input type="number" value="9000" id="to" name="to" class="range-input range-input-to" min="0"
+                      max="999999">
                     <label for="to" class="price-indication">до</label>
                   </div>
 
@@ -145,8 +147,12 @@
                 <div class="slidecontainer">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 11px; width: 210px;">
-                      <button type="button" class="range-toggle toggle-min"></button>
-                      <button type="button" class="range-toggle toggle-max"></button>
+                      <button type="button" class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальный диапазон</span>
+                      </button>
+                      <button type="button" class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальный диапазон</span>
+                      </button>
                     </div>
                   </div>
                   <div class="range-wrapper-inputs"></div>
@@ -178,15 +184,36 @@
 
               <div class="filters-block">
                 <button class="button-sort" type="button">
-                  <img src="images/button-sort-table.svg" alt="Сортировать в виде таблицы" width="16" height="14">
+                  <svg aria-label="Сортировать в виде таблицы" role="img" width="16" height="14" viewBox="0 0 16 14"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 0H0V6H4V0Z" fill="black" />
+                    <path d="M16 0H12V6H16V0Z" fill="black" />
+                    <path d="M10 0H6V6H10V0Z" fill="black" />
+                    <path d="M4 8H0V14H4V8Z" fill="black" />
+                    <path d="M16 8H12V14H16V8Z" fill="black" />
+                    <path d="M10 8H6V14H10V8Z" fill="black" />
+                  </svg>
+                </button>
+
+                <button aria-label="Сортировать в виде слайда" role="img" class="button-sort" type="button">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 12H0V14H16V12Z" fill="black" />
+                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+                  </svg>
                 </button>
 
                 <button class="button-sort" type="button">
-                  <img src="images/button-sort-slide.svg" alt="Сортировать в виде слайда" width="16" height="14">
-                </button>
-
-                <button class="button-sort" type="button">
-                  <img src="images/button-sort-list.svg" alt="Сортировать в виде списка" width="16" height="14">
+                  <svg aria-label="Сортировать в виде списка" role="img" width="16" height="14" viewBox="0 0 16 14"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0H0V2H2V0Z" fill="black" />
+                    <path d="M16 0H4V2H16V0Z" fill="black" />
+                    <path d="M2 4H0V6H2V4Z" fill="black" />
+                    <path d="M16 4H4V6H16V4Z" fill="black" />
+                    <path d="M2 8H0V10H2V8Z" fill="black" />
+                    <path d="M16 8H4V10H16V8Z" fill="black" />
+                    <path d="M2 12H0V14H2V12Z" fill="black" />
+                    <path d="M16 12H4V14H16V12Z" fill="black" />
+                  </svg>
                 </button>
 
               </div>
@@ -199,7 +226,7 @@
               <li class="product">
                 <div class="product-img">
                   <a href="#">
-                    <img src="images/hotel_card_amara.jpg" alt="Гостиница Amara Resort & Spa" width="300" height="212">
+                    <img src="images/hotel_card_amara.jpg" alt="Гостиница Amara Resort & Spa." width="300" height="212">
                   </a>
                 </div>
                 <a href="#" class="title-product">Amara Resort & Spa</a>
@@ -209,7 +236,7 @@
                 </div>
                 <div class="product-buttons">
                   <a href="#" class="button-details">Подробнее</a>
-                  <button class="button button-blue">В избранное</button>
+                  <button class="button button-blue" type="button">В избранное</button>
                 </div>
                 <div class="product-rating">
                   <div class="product-rating-stars product-rating-stars-4"></div>
@@ -220,7 +247,7 @@
               <li class="product">
                 <div class="product-img">
                   <a href="#">
-                    <img src="images/hotel_card_villas.jpg" alt="Гостиница Villas at Poco Diablo" width="300"
+                    <img src="images/hotel_card_villas.jpg" alt="Гостиница Villas at Poco Diablo." width="300"
                       height="212">
                   </a>
                 </div>
@@ -231,7 +258,7 @@
                 </div>
                 <div class="product-buttons">
                   <a href="#" class="button-details">Подробнее</a>
-                  <button class="button button-green">В избранном</button>
+                  <button class="button button-green" type="button">В избранном</button>
                 </div>
                 <div class="product-rating">
                   <div class="product-rating-stars product-rating-stars-4"></div>
@@ -242,7 +269,7 @@
               <li class="product">
                 <div class="product-img">
                   <a href="#">
-                    <img src="images/hotel_card_desert.jpg" alt="Гостиница Desert Quali Inn" width="300" height="212">
+                    <img src="images/hotel_card_desert.jpg" alt="Гостиница Desert Quali Inn." width="300" height="212">
                   </a>
                 </div>
                 <a href="#" class="title-product">Desert Quali Inn</a>
@@ -252,7 +279,7 @@
                 </div>
                 <div class="product-buttons">
                   <a href="#" class="button-details">Подробнее</a>
-                  <button class="button button-blue">В избранное</button>
+                  <button class="button button-blue" type="button">В избранное</button>
                 </div>
                 <div class="product-rating">
                   <div class="product-rating-stars product-rating-stars-3"></div>
@@ -263,7 +290,7 @@
               <li class="product">
                 <div class="product-img">
                   <a href="#">
-                    <img src="images/hotel_card_greentree.jpg" alt="Гостиница GreenTree Inn" width="300" height="212">
+                    <img src="images/hotel_card_greentree.jpg" alt="Гостиница GreenTree Inn." width="300" height="212">
                   </a>
                 </div>
                 <a href="#" class="title-product">GreenTree Inn</a>
@@ -273,7 +300,7 @@
                 </div>
                 <div class="product-buttons">
                   <a href="#" class="button-details">Подробнее</a>
-                  <button class="button button-blue">В избранное</button>
+                  <button class="button button-blue" type="button">В избранное</button>
                 </div>
                 <div class="product-rating">
                   <div class="product-rating-stars product-rating-stars-2"></div>
